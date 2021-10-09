@@ -227,7 +227,6 @@ img{
         grid-template-rows: repeat(2,1fr);
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 1rem;
         max-width: 968px;
         margin: 0;
         padding: 0;
@@ -236,7 +235,7 @@ img{
     #home .text-container{
         margin-top: 30%;
         padding: .5rem;
-        height: calc(100vh - 5rem);
+        height: calc(100vh - 11rem);
         max-width: 100%;
     }
     #home .text-container h1{
