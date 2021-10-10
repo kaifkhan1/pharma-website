@@ -169,6 +169,7 @@ img{
         background-color: rgba(192, 216, 255,.3);
     }
 
+
     .nav-container{
         display: flex;
         justify-content: center;
@@ -184,11 +185,18 @@ img{
         font-size: 2rem;
     }
 
+    .nav-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
     .nav-item{
         display: flex;
         flex-direction: column;
         justify-content:space-between;
         align-items: center;
+        margin-left: .8rem;
     }
     
 
@@ -223,42 +231,42 @@ img{
 
     #home .home-container
     {
-        display: grid;
-        grid-template-rows: repeat(2,1fr);
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
         text-align: center;
-        max-width: 968px;
-        margin: 0;
-        padding: 0;
+        gap: 0;
+        margin: .5rem;
     }
 
-    #home .text-container{
-        margin-top: 30%;
-        padding: .5rem;
-        height: calc(100vh - 11rem);
-        max-width: 100%;
-    }
     #home .text-container h1{
-        font-size: 2.1rem;
+        font-size: 1.5rem;
+        margin: 0;
     }
 
     #home .p-container h4{
-        font-size: 1rem;
+        font-size: .8rem;
+    }
+
+    #home .text-container .p-container{
+        margin-top: 10px;
     }
 
     #home .text-container .btn{
-        padding: 8px 16px;
+        padding: 5px 10px;
+        font-size: 10px;
     }
 
     #home .home-img{
         justify-content: center;
         margin: auto;
-        width: 300px;
-        height: 300px;
+        width: 200px;
+        height: 200px;
     }
 
     #home .btn-container{
-        margin-top: 40px;
+        margin-top: 12px;
     }
 }
 
