@@ -377,6 +377,10 @@ img{
         text-align: center;
     }
 
+    #vaccine .bar-container{
+        border-top: 1px solid var(--third-color);
+    }
+
     #vaccine .vaccine-container .bar-container .bar{
         width: 85%;
         height: 5px;
@@ -577,6 +581,7 @@ img{
 
 .bar-container{
     margin: 1.5rem 0;
+    padding: .5rem;
 }
 
 .bar-container h4{
