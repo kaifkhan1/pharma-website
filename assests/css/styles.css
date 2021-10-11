@@ -111,12 +111,14 @@ img{
     top: 0;
     left: 0;
     width: 100%;
+    z-index: 100;
 }
 
 .nav-container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index:100;
 }
 
 .nav-menu{
@@ -211,8 +213,8 @@ img{
     
 
     .nav-item a{
-        color: var(--main-color);
-        font-weight: 600;
+        color:#333;
+        font-weight: 700;
         font-size: .6rem;
         transition: all .4s ease-in;
     }
@@ -436,6 +438,7 @@ img{
     cursor: pointer;
     position: relative;
     overflow: hidden;
+    z-index: 1;
 }
 
 /* .card::after{
