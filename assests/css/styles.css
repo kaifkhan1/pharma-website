@@ -276,6 +276,7 @@ img{
         justify-content: center;
         width: 280px;
         height: 280px;
+        margin: auto;
     }
 
     #home .btn-container{
@@ -361,6 +362,8 @@ img{
     #vaccine .vaccine-container .img-container{
         width: 310px;
         height: 310px;
+        justify-content: center;
+        margin: auto;
     }
 
     #vaccine .vaccine-container .text-container{
