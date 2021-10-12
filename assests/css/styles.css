@@ -272,11 +272,10 @@ img{
         font-size: 10px;
     }
 
-    #home .home-img{
+    #home .img-container{
         justify-content: center;
-        margin: auto;
-        width: 250px;
-        height: 250px;
+        width: 280px;
+        height: 280px;
     }
 
     #home .btn-container{
@@ -433,12 +432,10 @@ img{
     margin-top: 2.5rem;
 }
 
-.home-container .home-img{
-    width: 400px;
+.home-container .img-container{
+    width: 450px;
     height: 400px;
-    padding: .5rem;
 }
-
 
 /* Section 2  */
 
