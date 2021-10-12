@@ -360,10 +360,11 @@ img{
     }
 
     #vaccine .vaccine-container .img-container{
-        width: 310px;
-        height: 310px;
+        width: 280px;
+        height: 280px;
         justify-content: center;
         margin: auto;
+        padding: .5rem;
     }
 
     #vaccine .vaccine-container .text-container{
@@ -392,7 +393,36 @@ img{
     #vaccine .bar-container p{
         font-size: .6rem;
     }
+
+    #footer .footer-menu{
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        padding: .5rem;
+    }
     
+    #footer .footer-list li{
+        margin-bottom: .2rem;
+    }
+    
+    #footer .footer-item.bold{
+        font-size: .9rem;
+    }
+
+    #footer .footer-logo{
+        font-size: 1.2rem;
+    }
+    
+    #footer .footer-list li a{
+        font-size: .8rem;
+        font-weight: 800;
+        cursor: pointer;
+    }
+
+    #footer .input-field span{
+        right: 40px;
+    }
+
 }
 
 
@@ -486,16 +516,6 @@ img{
     overflow: hidden;
     z-index: 1;
 }
-
-/* .card::after{
-    position: absolute;
-    content: '';
-    top: 0;
-    right: 20px;
-    height: 50px;
-    width: 20px;
-    background-color: var(--third-color);
-} */
 
 
 
@@ -601,3 +621,67 @@ img{
     font-weight: 700;
     font-size: .9rem;
 }
+
+
+#footer{
+    background-color: rgba(192, 216, 255,.3);
+}
+
+.footer-menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-list .footer-item{
+    margin-bottom: 1rem;
+}
+
+
+.footer-item.bold{
+    color: #333;
+    font-weight: 700;
+}
+
+.footer-list li{
+    margin-bottom: .5rem;
+}
+
+
+
+.footer-list li a{
+    color: var(--secondary-color);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+.footer-menu input{
+    padding: .5rem 1rem;
+    border: 2px solid var(--secondary-color);
+    border-radius: 4px;
+    position: relative;
+    transition: all .5s ease;
+}
+
+.input-field input:focus{
+    outline-color: var(--main-color);
+}
+
+.input-field input:focus + span{
+    background-color: var(--main-color);
+    /* color: var(--secondary-color); */
+}
+
+.input-field span{
+    position: absolute;
+    right: 13px;
+    font-size: 1.3rem;
+    padding: 5px 5px;
+    color: var(--third-color);
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all .5s ease-in;
+}
+
