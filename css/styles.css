@@ -364,6 +364,7 @@ img{
         height: 280px;
         justify-content: center;
         margin: auto;
+        padding: .5rem;
     }
 
     #vaccine .vaccine-container .text-container{
