@@ -1,0 +1,603 @@
+/* VARIABLES */
+
+:root{
+    --main-color : #2b6ddd;
+    --secondary-color : #12397b;
+    --third-color : #c0d8ff;
+    --font-color : #fff;
+}
+
+/* Reset Code  */
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat',sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1,h2,h3,h4{
+    margin: 0;
+}
+
+a{
+    text-decoration: none;
+    color: #333;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+.pd1{
+    padding: 1rem;
+}
+
+.pd2{
+    padding: 2rem;
+}
+
+.m1{
+    margin-left: 1rem;
+}
+
+.m2{
+    margin-left: 2rem;
+}
+
+
+.btn{
+    padding: 10px 20px;
+    border: 0;
+    transition: all .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    font-weight: 600;
+}
+
+.btn-primary{
+    background-color: var(--main-color);
+    color: #f2fcfe;
+}
+
+.btn-short{
+    padding: .55rem .2rem;
+}
+
+.btn-round{
+    border-radius: 5px;
+}
+
+
+.btn-outline{
+    border: 2px solid var(--main-color);
+    color: #333;
+}
+
+.btn-danger{
+    background-color: var(--danger-color) ;
+}
+
+.btn-outline:hover{
+    background-color: var(--main-color);
+    color: var(--font-color);
+}
+
+/* HTML CSS  */
+
+
+/* Navbar */
+ 
+.nav-logo{
+    font-size: 1.5rem;
+    color: var(--main-color);
+}
+
+.logo-bold{
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+#header{
+    height: 3rem;
+    background-color: rgba(192, 216, 255,.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    padding: 1.5rem;
+}
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:100;
+}
+
+.nav-menu{
+    padding-right: .4rem ;
+}
+
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-item{
+    margin-right: 25px;
+    font-weight: 500;
+    /* color: var(--third-color); */
+}
+
+
+.nav-item a{
+    /* color: #6a7279; */
+    font-weight: 700;
+    color: var(--font-color);
+    transition: all .3s ease-in;
+}
+
+.nav-item a:hover{
+    color: var(--main-color);
+}
+
+.nav-item a.btn:hover{
+    color: #ffff;
+}
+
+.nav-icon{
+    display: none;
+}
+
+/* Nvbar-Media-Queries */
+
+@media (max-width:600px) {
+
+    #header{
+        padding: 1rem;
+        height: 1.5rem;
+        background: none;
+    }
+
+    .nav-menu{
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        border-radius: 1.25rem 1.25rem 0 0;
+        box-shadow: 0 -1px 12px hsla(174,63%,15%,.15);
+        z-index: 100;
+        background-color: rgba(192, 216, 255,.3);
+    }
+
+
+    .nav-container{
+        display: flex;
+        justify-content: center;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 1rem 0;
+        background-color: rgba(192, 216, 255,.3);
+        z-index: 100;    
+    }
+
+
+    .nav-logo{
+        font-size: 2rem;
+    }
+
+    .nav-list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-item{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-between;
+        align-items: center;
+        margin-left: .8rem;
+        z-index: 100;
+    }
+    
+
+    .nav-item a{
+        color:#333;
+        font-weight: 700;
+        font-size: .6rem;
+        transition: all .4s ease-in;
+    }
+
+
+    .nav-item a.btn{
+        display: none;
+    }
+
+    .nav-icon{
+        display: block;
+        color: var(--secondary-color);
+        transition: all .3s ease-in;
+    }
+
+    .nav-icon i{
+        font-size: 1.5rem;
+    }
+
+    .nav-item a:hover , .nav-icon:hover{
+        color: var(--main-color);
+    }
+
+
+    /* Section A  */
+
+    #home .home-container
+    {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        gap: 0;
+        margin: .5rem;
+        margin-top: 3rem;
+    }
+
+    #home .text-container h1{
+        font-size: 1.6rem;
+        margin: 0;
+    }
+
+    #home .p-container h4{
+        font-size: .8rem;
+    }
+
+    #home .text-container .p-container{
+        margin-top: 10px;
+    }
+
+    #home .text-container .btn{
+        padding: 7px 14px;
+        font-size: 10px;
+    }
+
+    #home .img-container{
+        justify-content: center;
+        width: 280px;
+        height: 280px;
+        margin: auto;
+    }
+
+    #home .btn-container{
+        margin-top: 12px;
+    }
+
+
+    #service .service-container .text-container h1{
+        font-size: 1.8rem;
+    }
+    
+    
+    #service .text-container h4{
+        font-size: 1rem;
+        color: var(--secondary-color);
+        padding: 10px;
+    }
+    
+    #service .service-container .p-container h4{
+        padding: 5px;
+        font-size: 12px;
+        color: #333;
+    }
+
+    #service .card{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 1rem;
+        z-index: 1;
+    }
+
+    #service .service-card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #service .service-card-container .card-icon i{
+        
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        font-size: 1.7rem;
+        background-color: #ccc;
+        color: var(--secondary-color);
+        border-radius: 6px;
+        padding: 4px;
+        
+    }
+
+    #service .card-content {
+        margin-top: 45px;
+    }
+    
+    #service .card-content h3{
+        font-size: 1.1rem;
+        color: var(--font-color);
+    }
+    
+    #service .card-content .p-container{
+        margin-top: 10px;
+        padding: .3rem;
+    }
+
+    #service .card-content .p-container h4{
+        font-size: .8rem;
+        font-weight: 600;
+    }
+
+
+    /* Vaccine  */
+
+    #vaccine h4{
+        font-size: 1rem;
+    }
+
+    #vaccine .vaccine-container{
+        display: flex;
+        flex-direction: column-reverse;
+        padding: .5rem;
+
+    }
+
+    #vaccine .vaccine-container .img-container{
+        width: 280px;
+        height: 280px;
+        justify-content: center;
+        margin: auto;
+    }
+
+    #vaccine .vaccine-container .text-container{
+        padding: .5rem;
+    }
+
+    #vaccine .vaccine-container .heading-container h1{
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    #vaccine .vaccine-container .p-container{
+        text-align: center;
+    }
+
+    #vaccine .bar-container{
+        border-top: 1px solid var(--third-color);
+    }
+
+    #vaccine .vaccine-container .bar-container .bar{
+        width: 85%;
+        height: 5px;
+        /* position: relative; */
+    }
+
+    #vaccine .bar-container p{
+        font-size: .6rem;
+    }
+    
+}
+
+
+.home-container
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    text-align: left;
+    gap: 1.5rem;
+    margin: 9rem 1rem 1rem 1rem;
+    padding: 1rem;
+}
+
+.text-container{
+    padding: 1rem;
+}
+
+.text-container h1{
+    font-size: 3rem;
+    color: var(--main-color);
+    margin-top: 20px;
+}
+
+.text-container h1:nth-child(2){
+    color: #333;
+}
+
+.text-container .p-container{
+    padding: .25rem;
+    margin-top: 1rem;
+}
+
+.text-container h4{
+    font-size: 1.2rem;
+    color: var(--third-color);
+    font-weight: 600;
+}
+
+.btn-container{
+    margin-top: 2.5rem;
+}
+
+.home-container .img-container{
+    width: 450px;
+    height: 400px;
+}
+
+/* Section 2  */
+
+
+.service{
+    text-align: center;
+}
+
+.service-container .text-container h1{
+    font-size: 2.8rem;
+}
+
+
+.service-container .text-container h4{
+    font-size: 1.5rem;
+    color: var(--secondary-color);
+    padding: 10px;
+}
+
+.service-container .p-container h4{
+    padding: 8px;
+    font-size: 14px;
+    color: #333;
+}
+
+.service-card-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 1rem 1.25rem;
+    padding: 1rem;
+}
+
+.card{
+    width: 270px;
+    height: 300px;
+    background-color: var(--main-color);
+    color:var(--third-color);
+    border-radius: 15px;
+    box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.1);
+    transition: .4s;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* .card::after{
+    position: absolute;
+    content: '';
+    top: 0;
+    right: 20px;
+    height: 50px;
+    width: 20px;
+    background-color: var(--third-color);
+} */
+
+
+
+.card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+
+
+.card .card-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    /* text-align: center; */
+}
+
+
+
+.card .card-icon i{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    font-size: 2rem;
+    background-color: #ccc;
+    color: var(--secondary-color);
+    border-radius: 6px;
+    padding: 8px;
+}
+
+.card-content {
+    margin-top: 90px;
+}
+
+.card-content h3{
+    font-size: 1.5rem;
+    color: var(--font-color);
+}
+
+.card-content .p-container{
+    margin-top: 20px;
+    padding: .4rem;
+}
+
+
+/* Vaccine Container  */
+
+.vaccine-container
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    padding: 1rem;
+}
+.vaccine-container .img-container{
+    width: 600px;
+    height: 600px;
+}
+
+.vaccine-container .heading-container{
+    padding: .5rem
+}
+
+.vaccine-container .p-container{
+    margin: 1rem 0;
+}
+
+.info-container{
+    margin: .8rem 0;
+}
+
+.info-container h4{
+    color: var(--secondary-color);
+    /* font-weight: 600; */
+}
+
+.info-container h4 span{
+    color: var(--main-color);
+    margin-left: .5rem;
+    font-weight: 700;
+}
+
+.bar-container{
+    margin: 1.5rem 0;
+    padding: .5rem;
+}
+
+.bar-container h4{
+    margin: .8rem 0;
+    color: var(--secondary-color);
+}
+
+.bar-container .bar{
+    width: 70%;
+    height: 8px;
+    background-color: #cccc;
+    position: relative;
+}
+
+.bar-container p{
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-size: .9rem;
+}
