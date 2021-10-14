@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS LINK  -->
-    <link rel="stylesheet" href="./assests/css/styles.css">
-    <link rel="stylesheet" href="./assests/css/about.css">
 
+    <link rel="stylesheet" href="./assests/css/styles.css">
+    <link rel="stylesheet" href="./assests/css/register.css">
     
     <!-- ICONS -->
 
@@ -32,14 +32,14 @@
             <div class="nav-menu">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <span class="nav-icon"><i href='./index.html' class='bx bx-home-alt'></i></span>
-                        <a href="./index.html">Home</a>
+                        <span class="nav-icon"><i href='#home' class='bx bx-home-alt'></i></span>
+                        <a href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <span class="nav-icon">
                             <i href='#service' class='bx bx-shopping-bag' ></i>
                         </span>
-                        <a href="index.html#service">Service</a>
+                        <a href="#service">Service</a>
                         
                     </li>
                     <li class="nav-item">
@@ -47,7 +47,7 @@
                             <!-- <i href='' class='bx bx-phone'></i> -->
                             <i href='#vaccine' class="fas fa-syringe"></i>
                         </span>
-                        <a href="index.html#vaccine">Vaccine</a>
+                        <a href="#vaccine">Vaccine</a>
                         
                     </li>
                     <li class="nav-item">
@@ -64,28 +64,55 @@
         </nav>
     </header>
 
-
-    <main class="about pd2 conatiner-margin" id="about">
-        <h1>About Us</h1>
-        <div class="about-container">
-            <div class="text-container">
-                <h4>At Healthi.fy, we constantly work towards ensuring access to high quality and affordable medicines to
-                    support patients in need. Which is why, we have been trusted by health care professionals and patients across
-                    geographies for decades.
-                </h4>
-            </div>
-            <div class="img-container">
-                <img src="./assests/images/about-us.svg" alt="">
-            </div>
-        </div>
-        <div class="address-container">
-            <h4>Registered Office</h4>
-            <p> Healthi.fy Ltd.
-                Healthi.fy House, Peninsula Business Park, 
-                Ganpatrao Kadam Marg,  Lower Parel, Mumbai-400013 
+    <main class="register pd2 conatiner-margin" id="register">
+        <h1>Registration</h1>
+        <div class="form-container">
+            <div class="form-content"> <form>
+                <div class="flex-row">
+                    <div class="f-name"> 
+                        <h4>First Name</h4>
+                        <input type="text" name="f-name" placeholder="First Name">
+                    </div>
+                        
+                    <div class="l-name">
+                        <h4>Last Name</h4>
+                        <input type="text" name="l-name" placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="flex-row">
+                    <div class="n-id">                 
+                        <h4>National ID</h4>
+                        <input type="text" placeholder="National ID"></div>
+                        
+                    <div class="dob">
+                        <h4>DOB</h4>
+                        <input type="date" placeholder="DOB">
+                    </div>
                 
-                +91 22 24826000 | +91 22 24826701 | +91 22 24826300 </p>
-            <a href="" class="btn btn-outline m1">Send Query </a>
+                </div>
+                    
+                <div class="flex-row">
+                    <div class="m-no">
+                        <h4>Mobile No</h4>
+                        <input type="number" placeholder="Mobile No">
+                    </div>
+                    <div class="address"> 
+                        <h4>Address</h4>
+                        <input type="text" placeholder="Address">
+                    </div>
+                </div>
+                   
+                <div class="p-code">
+                    <h4>Pin Code</h4>
+                    <input type="number" placeholder="Pin Code">
+                </div>
+                
+                <a href="#" class="btn btn-primary">Register</a>
+            </form></div>
+           
+            <div class="img-container">
+                <img src="./assests/images/register.svg" alt="">
+            </div>
         </div>
     </main>
 
@@ -120,7 +147,7 @@
         </div>
     </footer>
 
-
     <script src="https://kit.fontawesome.com/df86e09c4b.js" crossorigin="anonymous"></script>
+
 </body>
 </html>

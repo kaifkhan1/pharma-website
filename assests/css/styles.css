@@ -89,6 +89,10 @@ img{
     color: var(--font-color);
 }
 
+.conatiner-margin{
+    margin: 8rem 1rem 1rem 1rem;
+}
+
 h1,h2{
     color: var(--main-color);
 }
