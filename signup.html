@@ -8,7 +8,7 @@
     <!-- CSS LINK  -->
 
     <link rel="stylesheet" href="./assests/css/styles.css">
-    <link rel="stylesheet" href="./assests/css/register.css">
+    <link rel="stylesheet" href="./assests/css/signup.css">
     
     <!-- ICONS -->
 
@@ -33,13 +33,13 @@
                 <ul class="nav-list">
                     <li class="nav-item">
                         <span class="nav-icon"><i href='#home' class='bx bx-home-alt'></i></span>
-                        <a href="index.html">Home</a>
+                        <a href="#home">Home</a>
                     </li>
                     <li class="nav-item">
                         <span class="nav-icon">
                             <i href='#service' class='bx bx-shopping-bag' ></i>
                         </span>
-                        <a href="index.html#service">Service</a>
+                        <a href="#service">Service</a>
                         
                     </li>
                     <li class="nav-item">
@@ -47,7 +47,7 @@
                             <!-- <i href='' class='bx bx-phone'></i> -->
                             <i href='#vaccine' class="fas fa-syringe"></i>
                         </span>
-                        <a href="index.html#vaccine">Vaccine</a>
+                        <a href="#vaccine">Vaccine</a>
                         
                     </li>
                     <li class="nav-item">
@@ -64,57 +64,39 @@
         </nav>
     </header>
 
-    <main class="register pd2 container-margin" id="register">
-        <h1>Registration</h1>
-        <div class="form-container">
-            <div class="form-content"> <form>
-                <div class="flex-row">
-                    <div class="f-name"> 
-                        <h4>First Name</h4>
-                        <input type="text" name="f-name" placeholder="First Name">
-                    </div>
-                        
-                    <div class="l-name">
-                        <h4>Last Name</h4>
-                        <input type="text" name="l-name" placeholder="Last Name">
-                    </div>
-                </div>
-                <div class="flex-row">
-                    <div class="n-id">                 
-                        <h4>National ID</h4>
-                        <input type="text" placeholder="National ID"></div>
-                        
-                    <div class="dob">
-                        <h4>DOB</h4>
-                        <input type="date" placeholder="DOB">
-                    </div>
-                
-                </div>
+
+    <section class="sign-up container-margin" id="sign-up">
+        <h1>Create Account</h1>
+        <div class="sign-up-container">
+
+            <div class="text-container">
                     
-                <div class="flex-row">
-                    <div class="m-no">
-                        <h4>Mobile No</h4>
-                        <input type="number" placeholder="Mobile No">
+                <div class="form-container">
+                    <input type="text" placeholder="Name">
+                    <input type="text" placeholder="Email">
+                    <input type="text" placeholder="Password">
+                    <div class="term">
+                        <input type="checkbox">
+                        <p>I agree to the <span>Terms</span> and <span>Privacy Policy.</span></p>
                     </div>
-                    <div class="address"> 
-                        <h4>Address</h4>
-                        <input type="text" placeholder="Address">
+                    <div class="btn-container">
+                        <a href="#" class="btn btn-primary">Sign Up</a>
+                        <a href="" class="btn btn-outline">Sign In</a>
                     </div>
                 </div>
-                   
-                <div class="p-code">
-                    <h4>Pin Code</h4>
-                    <input type="number" placeholder="Pin Code">
+                <div class="icon-container">
+                    <i class='bx bxl-facebook'></i>
+                    <i class='bx bxl-google'></i>
+                    <i class='bx bxl-twitter'></i>
+                    <i class='bx bxl-linkedin'></i>
                 </div>
-                
-                <a href="#" class="btn btn-register btn-primary">Register</a>
-            </form></div>
-           
+            </div>
             <div class="img-container">
-                <img src="./assests/images/register.svg" alt="">
+                <img src="./assests/images/sign-up.svg" alt="">
             </div>
         </div>
-    </main>
+    </section>
+
 
     <footer id="footer" class="footer pd1">
         <div class="footer-container">
@@ -122,7 +104,7 @@
             <div class="footer-menu">
                 <ul class="footer-list footer-list-1">
                     <li class="footer-item bold">Product</li>
-                    <li><a href="index.html#vaccine">Vaccine</a></li>
+                    <li><a href="#vaccine">Vaccine</a></li>
                     <li><a>Swab</a></li>
                     <li><a>PCR</a></li>
                 </ul>
@@ -148,6 +130,5 @@
     </footer>
 
     <script src="https://kit.fontawesome.com/df86e09c4b.js" crossorigin="anonymous"></script>
-
 </body>
 </html>
