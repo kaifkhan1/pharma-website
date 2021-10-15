@@ -493,7 +493,7 @@ img{
     color: #333;
 }
 
-.text-container .btn-container .btn-primary{
+.home-container.btn-container .btn-primary{
     display: none;
 }
 
