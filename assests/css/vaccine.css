@@ -1,0 +1,23 @@
+/* .vaccine-container{
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+} */
+
+.vaccine-container .text-container h4{
+    font-size: 1.1rem;
+}
+
+.vaccine-container .text-container span{
+    color: #333;
+}
+
+.vaccine-container .img-container{
+    width: 450px ;
+    height: 450px;
+
+}
+
+.text-container{
+    padding: .5rem;
+}

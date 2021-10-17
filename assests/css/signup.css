@@ -3,12 +3,6 @@
     text-align: center;
 }
 
-.sign-up-container{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    justify-content:center;
-    align-items: center;
-}
 
 .form-container{
     display: flex;
@@ -73,13 +67,7 @@
 }
 
 
-@media(max-width:600px){
-    .sign-up-container{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content:center;
-        align-items: center;
-    }
+@media(max-width:600px){ 
 
     .text-container{
         padding: .5rem;

@@ -21,6 +21,7 @@ html{
 }
 
 
+/* <-------------------------Components ------------------------------>  */
 
 h1,h2,h3,h4{
     margin: 0;
@@ -110,10 +111,19 @@ img{
     height: 450px;
 }
 
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+
 /* HTML CSS  */
 
 
-/* Navbar */
+/* <-------------------------------NAVBAR------------------------------> */
  
 .nav-logo{
     font-size: 1.5rem;
@@ -213,7 +223,8 @@ img{
     margin-top: 1rem;
 }
 
-.text-container h4{
+.text-container h4
+{
     font-size: 1.2rem;
     color: var(--third-color);
     font-weight: 600;
@@ -228,7 +239,7 @@ img{
     height: 400px;
 }
 
-/* Section 2  */
+/* <-------------------------------- SERVICE CONTAINER ------------------------> */
 
 
 .service{
@@ -321,18 +332,13 @@ img{
 }
 
 
-/* Vaccine Container  */
+/* <--------------------- VACCINE CONTAINER ------------------>  */
 
-.vaccine-container
-{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
+
+.vaccine-container{
     padding: 1rem;
 }
-.vaccine-container .img-container{
-    width: 600px;
-    height: 600px;
-}
+
 
 .vaccine-container .heading-container{
     padding: .5rem
@@ -380,6 +386,8 @@ img{
     font-size: .9rem;
 }
 
+
+/*<------------------------ FOOTER CONTAINER  -------------------->  */
 
 #footer{
     background-color: rgba(192, 216, 255,.3);
@@ -454,7 +462,7 @@ img{
 
 
 
-/* Nvbar-Media-Queries */
+/* <------------------------------- MEDIA QUERIES ----------------------> */
 
 @media (max-width:600px) {
 
@@ -471,6 +479,11 @@ img{
         padding: .5rem;
     }
 
+    .text-container-big{
+        padding: .5rem;
+        font-size: 1rem;
+    }
+
     .img-container{
         width: 310px;
         height: 310px;
@@ -481,6 +494,16 @@ img{
         /* padding: 7px 14p; */
         font-size: 10px;
     }
+
+    .grid-container{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        gap: 0;
+    }
+
+    /* Navbar Media Queries  */
 
     #header{
         padding: 1rem;
@@ -560,14 +583,10 @@ img{
     }
 
 
-    /* Section A  */
+    /* <--------------------------- Section A --------------------------> */
 
     #home .home-container
     {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
         text-align: center;
         gap: 0;
         margin: .5rem;
@@ -596,12 +615,14 @@ img{
         justify-content: center;
         width: 280px;
         height: 280px;
-        margin: auto;
     }
 
     #home .btn-container{
         margin-top: 1rem;
     }
+
+
+    /* <--------------------------------- Service Container Media Queries ------------------------------>  */
 
 
     #service .service-container .text-container h1{
@@ -666,7 +687,7 @@ img{
     }
 
 
-    /* Vaccine  */
+    /* <------------------------------------ Vaccine container Media Queries ----------------------------> */
 
     #vaccine h4{
         font-size: 1rem;
@@ -713,6 +734,8 @@ img{
     #vaccine .bar-container p{
         font-size: .6rem;
     }
+
+    /* <--------------------------- Footer Container --------------------------->  */
 
     #footer .footer-menu{
         flex-direction: column;
