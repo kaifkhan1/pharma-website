@@ -67,7 +67,7 @@
 
     #register .form-content{
         width: 100%;
-
+        text-align: left;
     }
 
     #register .img-container{
